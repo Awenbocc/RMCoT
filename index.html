@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ThinkVG: Think with Visual Grounding in Medical VQA via Reinforcement Learning</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><img src="static/images/favicon.ico" alt="Icon" style="width: 65px; height: 65px; vertical-align: middle; margin-right: 4px;">ThinkVG <br> 
+              <!-- <span style="font-size: 2rem; color: #555;">A Large-Scale, Groundable, and Explainable Medical VQA Benchmark for Chest X-ray Diagnosis</span></h1> -->
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Bo Liu<sup style="color: #1E90FF;"> 1</sup>,</span>
+              <span class="author-block">
+                Xiangyu Zhao<sup style="color: #1E90FF;"> 1</sup>,</span>
+              <span class="author-block">
+                Along He<sup style="color: #FFA500;"> 2</sup>,</span>
+              <span class="author-block">
+                Yidi Chen<sup style="color: #3CB371;"> 3</sup>,</span>
+              <span class="author-block">
+                Huazhu Fu<sup style="color: #B22222;"> * 4</sup></span>
+              <span class="author-block">
+                Xiao-Ming Wu<sup style="color: #1E90FF;"> * 1</sup>,</span>
+              
+                  <!-- <span class="author-block">
+                    : bokelvin.liu@connect.polyu.hk<sup style="color: #B22222;"> * 2</sup></span> -->
+                </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup style="color: #1E90FF;">1 </sup>The Hong Kong Polytechnic University, Hong Kong, 
+                    <br> <sup style="color: #FFA500;">2 </sup>Shenzhen University, China,
+                    <sup style="color: #3CB371;">3 </sup>West China Hospital of Sichuan University, China,
+                    <br><sup style="color: #B22222;">4 </sup>Institute of High Performance Computing, Agency for Science, Technology and Research, Singapore.
+                    </span>
+                    <span class="eql-cntrb"><small><br><br><sup>*</sup>Corresponding authors</small></span>
+                    <br>
+                    <span class="eql-cntrb">
+                      Any questions: <a href="mailto:bokelvin.liu@connect.polyu.hk">bokelvin.liu@connect.polyu.hk</a> (Bo Liu)
+                    </span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                         <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2506.17939" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                
+
+
+
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/BoKelvin/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-envelope"></i>
+                    </span>
+                    <span>ISSUE</span>
+                  </a>
+                </span> -->
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Overview Image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="text-align: center;">
+      <h2 class="title is-3"><span class="icon" style="font-size: 30px; margin-right: 10px;">&#127775;</span>Pipeline</h2>
+      <img src="static/images/thinkvg_framework.jpg" id="tree" alt="Overview Image" style="height: 100%;">
+      <h2 class="subtitle has-text-centered">
+        <!-- <p style="font-size: 11px;"> Illustration of the proposed pipeline for constructing GEMeX, with two main stages. <br> <b>Stage I </b> involves cleaning data from Chest ImaGenome, while <b>Stage II </b> designs prompts to enable GPT-4o to generate a large-scale, groundable, and explainable VQA dataset. </p> -->
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End overview -->
+
+<!-- Paper abstract -->
+<!-- <section class="section hero has-background-white">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3"><span class="icon" style="font-size: 30px; margin-right: 10px;">&#127775;</span>Contributions</h2>
+        <div class="content has-text-justified">
+          <p>
+            1. We introduce GEMeX, a large-scale Med-VQA dataset for chest X-rays, designed to support diverse question types and provide enhanced explainability for medical VQA systems. To our knowledge, it is the largest chest X-ray VQA dataset and the first Med-VQA dataset to embody the concept of multimodal explainability.<br>
+            2. We systematically benchmark 10 representative LVLMs using GEMeX, introducing multiple evaluation metrics to comprehensively demonstrate the performance of current popular LVLMs on the Med-VQA task. <br>
+            3. We show that our proposed precise vision-text explainability notably enhances the visual reasoning ability of LVLMs through fine-tuning, addressing a key deficiency observed in various models. We highlight the importance of a large-scale, groundable, and explainable VQA benchmark for advancing the development and deployment of LVLMs in healthcare. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+
+
+
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{liu2025gemex,
+  title={GEMeX-ThinkVG: Towards Thinking with Visual Grounding in Medical VQA via Reinforcement Learning},
+  author={Liu, Bo and Zhao, Xiangyu and He, Along and Chen, Yidi and Fu, Huazhu and Wu, Xiao-Ming},
+  journal={arXiv preprint arXiv:2506.17939},
+  year={2025}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+<div align="center">
+  <a href="https://clustrmaps.com/site/1c2xa"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=pmcQZ3axeIaNgEHH1KBedgmmmdMaRnazE0c3Wjm-8aY&cl=ffffff" /></a>
+</div>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
